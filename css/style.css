@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none !important;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -21,7 +23,7 @@ header {
 
 .header-text {
   margin-left: 12%;
-  margin-top: 12%;
+  margin-top: 16%;
   color: whitesmoke;
   font-family: "Poppins", sans-serif;
   animation: text-up 1.5s linear;
@@ -35,7 +37,7 @@ header {
 
 .header-text h1 {
   font-weight: 700;
-  font-size: 82px;
+  font-size: 50px;
   display: block;
   margin-bottom: 15px;
   background: -webkit-linear-gradient(#ff9696, #ffe89e);
@@ -98,7 +100,9 @@ section {
   align-items: center;
   justify-content: space-between;
 }
-
+.skills .skills-content {
+  align-items: flex-start;
+}
 section .title {
   position: relative;
   margin-bottom: 60px;
@@ -226,6 +230,7 @@ section .title::after {
   padding: 20px 25px;
   cursor: pointer;
   transition: all 0.5s ease;
+  height: 250px;
 }
 
 .services .serv-content .services-card:hover {
@@ -381,7 +386,35 @@ section .title::after {
 .project .title::after {
   content: "Portfolio";
 }
-
+.project .portfolio-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hover-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff !important;
+  text-decoration: none;
+  padding: 20px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.hover-content:hover {
+  opacity: 1;
+}
 .project .portfolio-img img {
   cursor: pointer;
   border: 3px solid #999;
@@ -392,9 +425,6 @@ section .title::after {
   transition: all 1s ease;
 }
 
-.project .portfolio-img img:hover {
-  transform: scale(1.06);
-}
 /* Blog Style  Begin */
 
 .blog .title::after {
@@ -495,7 +525,7 @@ footer span i {
   header {
     background-size: cover;
     height: 90vh;
-    background: url(../images/galareya/white/10.8.png) right;
+    /* background: url(../images/galareya/white/10.8.png) right; */
     background-size: cover;
     background-attachment: fixed;
   }
