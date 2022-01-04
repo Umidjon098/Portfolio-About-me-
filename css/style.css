@@ -263,22 +263,22 @@ section .title::after {
   margin-bottom: 20px;
 }
 
-.skills .skills-content .left a {
+/* .skills .skills-content .left a {
   text-decoration: none;
   color: #fc6060;
   padding: 7px 45px;
   border: 2px solid #fc6060;
   border-radius: 20px;
   transition: all 0.5s ease-out;
-}
+} */
 
-.skills .skills-content .left a:hover {
+/* .skills .skills-content .left a:hover {
   font-weight: 500;
   -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
   box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
   background-color: #fc6060;
   color: #ffffff;
-}
+} */
 
 .skills .skills-content .right .bars {
   margin-bottom: 15px;
